@@ -360,48 +360,48 @@
                 <tr>
                 <td> 
                     <label>Enter Name</label>
-                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Name" required maxlength="20">
                 </td>
                 <td> 
                     <label>Age</label>
-                    <input type="number" placeholder="Age">
+                    <input type="number" placeholder="Age" required min="1" max="100">
                 </td>
             </tr>
             
             <tr>
                 <td> 
                     <label>Gender</label>
-                    <input type="radio"  name = "Gender" placeholder="Male">Male
-                    <input type="radio"  name = "Gender" placeholder="Female">Female
-                    <input type="radio"  name = "Gender" placeholder="Others">Others
+                    <input type="radio"  name = "Gender" placeholder="Male" required>Male
+                    <input type="radio"  name = "Gender" placeholder="Female" required>Female
+                    <input type="radio"  name = "Gender" placeholder="Others" required>Others
                 </td>
                 
                 
                 <td> 
                     <label>Phone Number</label>
-                    <input type="number" placeholder="Number">
+                    <input type="number" placeholder="Number"  required min="0">
                 </td>
             </tr>
             
             <tr>
                 <td> 
                     <label>Email Id</label>
-                    <input type="email" placeholder="EmailID">
+                    <input type="email" placeholder="EmailID"  required>
                 </td>
                 <td> 
                     <label>Password</label>
-                    <input type="password" placeholder="password">
+                    <input type="password" placeholder="password"  required maxlength="8">
                 </td>
             </tr>
             
             <tr>
                 <td> 
                     <label>Adhar Number</label>
-                    <input type="number" placeholder="Adhar">
+                    <input type="number" placeholder="Adhar"  required>
                 </td>
                 <td> 
                     <label>Pan Number</label>
-                    <input type="text" placeholder="Pan">
+                    <input type="text" placeholder="Pan"  required   maxlength="10">
                 </td>
             </tr>
 
@@ -422,7 +422,7 @@
                 <td>
                 
                     <label>Date of Birth</label>                
-                    <input type="date" name = "DateofBirth">
+                    <input type="date" name = "DateofBirth"  required>
 
                 </td>
         </tr>
@@ -435,13 +435,22 @@
 
             <td>
                 <label>Upload Your Resume</label>
-                <input type="file" name = "UploadFile">
+                <input type="file" name = "UploadFile" required>
             </td>
+
+
         </tr>    
              
         </table>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
+
+        <label>Select Courses</label>
+        <input type="checkbox"  required>JAVA
+        <input type="checkbox"  required>SQL
+        <input type="checkbox"  required>WEB
+
+
 
     </form>
         
