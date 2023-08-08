@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <title>Css Box Model And position</title>
+
+    <style>
+        div.rectangle1{
+            border: 2px solid blue;
+            height: 200px;
+            width: 400px;
+            position: absolute;
+            left: 110px;
+            top: 200px;
+            display: inline-block;
+
+        }
+
+        div.rectangle2{
+            border: 0.5px solid red;
+            height: 75px;
+            width: 150px;
+            position: absolute;
+            top: 60px;
+            left: 120px;
+        }
+
+        div.fixed{
+            position: fixed;
+            left: 260px;
+            top: 270px;
+        }
+
+        div.relative{
+            position: relative;
+            left: 20px;
+            top: 50px;
+        }
+
+        div.square1{
+            border: 2px solid orange;
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            left: 60px;
+            top: 50px;
+            
+        }
+        div.square2{
+            border: 1px solid greenyellow;
+            height: 180px;
+            width: 180px;
+            position: absolute;
+            left: 155px;
+            top: 160px;
+        }
+
+        h1.fix{
+            position: fixed;
+            left: 220px;
+            top: 100px;
+        }
+
+        .rel{
+            position: relative;
+            left: 250px;
+            top: 220px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="rectangle1"><div class="fixed">First rectangle</div>   
+    <div class="rectangle2"><div class="relative">Second rectangle</div></div>
+
+</div>
+
+<div class="square1">
+    <div class="square2"></div>
+</div>
+
+<h1 class="fix">Square One</h1>
+<div class="rel">Square two</div>
+
+</body>
+</html>
